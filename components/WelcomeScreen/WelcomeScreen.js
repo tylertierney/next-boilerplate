@@ -47,10 +47,13 @@ const WelcomeScreen = () => {
               Full-service solutions in 110+ markets
             </BrandedSubheading>
             <Flex w="100%" mb="2rem">
-              <BrandedOutlineBtn props={{ color: "red", mr: "0.8rem" }}>
+              <BrandedOutlineBtn
+                name="Connect With Us"
+                props={{ color: "red", mr: "0.8rem" }}
+              >
                 Connect With Us
               </BrandedOutlineBtn>
-              <BrandedOutlineBtn props={{ color: "blue" }}>
+              <BrandedOutlineBtn name="View Examples" props={{ color: "blue" }}>
                 View Examples
               </BrandedOutlineBtn>
             </Flex>

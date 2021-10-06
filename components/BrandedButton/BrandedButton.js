@@ -14,6 +14,7 @@ const BrandedButton = ({
   disabled,
   isLoading,
   setIsLoading,
+  name,
 }) => {
   const ref = useRef(null);
 
@@ -57,10 +58,11 @@ const BrandedButton = ({
       break;
   }
 
+  console.log(name);
+
   const button = (
     <Button
       ref={ref}
-      // disabled={action === "submit" ? disabled : isLoading}
       variant={variant}
       backgroundColor={bgColor}
       transition="0.3s ease-in-out"
@@ -78,6 +80,7 @@ const BrandedButton = ({
       minW={minW ? `${minW}px` : ""}
       type="submit"
       opacity={isLoading ? "0.4" : "1"}
+      name={name}
       {...props}
     >
       {isLoading ? (

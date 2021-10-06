@@ -29,6 +29,7 @@ const NavbarControls = () => {
             href="/login"
             isLoading={loginIsLoading}
             setIsLoading={setLoginIsLoading}
+            name="Log In"
           >
             Log In
           </BrandedButton>
@@ -40,6 +41,7 @@ const NavbarControls = () => {
             props={{ margin: "0px 4px", maxH: "90%" }}
             isLoading={signupIsLoading}
             setIsLoading={setSignupIsLoading}
+            name="Sign Up"
           >
             Sign Up
           </BrandedButton>

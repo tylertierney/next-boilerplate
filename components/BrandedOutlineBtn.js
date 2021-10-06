@@ -1,7 +1,7 @@
 import { Flex, Button } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 
-const BrandedOutlineBtn = ({ children, props }) => {
+const BrandedOutlineBtn = ({ children, props, name }) => {
   let bgGradient;
   switch (props?.color) {
     case "red":
@@ -32,6 +32,7 @@ const BrandedOutlineBtn = ({ children, props }) => {
         h="96%"
         w="98%"
         color={useColorModeValue("gray.500", "brand.text.light")}
+        name={name}
       >
         {children}
       </Button>

@@ -49,11 +49,9 @@ const IconList = ({ items, props }) => {
             boxShadow="0px 0px 20px 1px rgb(0, 0, 0, 0.2)"
             p="0.6rem 0"
             backgroundColor={iconBgColor}
-            // border="solid pink 1px"
           />
           <Text
             p="0.6rem 0"
-            // border="solid blue 1px"
             textAlign={["left", "left", "center"]}
             as="span"
             maxW={["380px"]}
@@ -70,15 +68,19 @@ const IconList = ({ items, props }) => {
       //some
       {...props}
       w="100%"
+      display="flex"
+      flexDirection={["column", "column", "row"]}
+      justifyContent="space-around"
+      alignItems="flex-start"
     >
-      <Flex
+      {/* <Flex
         w="100%"
         direction={["column", "column", "row"]}
         justifyContent="space-around"
         alignItems="flex-start"
-      >
-        {listItemArray}
-      </Flex>
+      > */}
+      {listItemArray}
+      {/* </Flex> */}
     </List>
   );
 };

@@ -17,6 +17,7 @@ const ThemeSwitch = () => {
       color="black"
       variant="unstyled"
       _focus={{ outline: "none" }}
+      name="Dark or light theme"
     />
   );
 };
